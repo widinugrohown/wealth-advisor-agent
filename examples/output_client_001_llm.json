@@ -1,0 +1,198 @@
+{
+  "run_id": "20261015T113229-c001-7806",
+  "client_id": "c001",
+  "generated_at": "2026-10-15T11:32:45+08:00",
+  "status": "ok",
+  "client_snapshot": {
+    "name": "Client 001",
+    "risk_profile": "conservative",
+    "aum_idr": 8862806178
+  },
+  "findings": [
+    {
+      "finding_id": "F1",
+      "type": "anomaly",
+      "severity": "low",
+      "rules": [
+        "R6_dormant_reactivation"
+      ],
+      "evidence": {
+        "tx_ids": [
+          "t0138",
+          "t0139",
+          "t0140"
+        ],
+        "amount_idr": 5840716708,
+        "baseline_idr": 147.0,
+        "value": null,
+        "extra": {
+          "rule_values": {
+            "R6_dormant_reactivation": 147.0
+          },
+          "counterparty": "cp_big_001",
+          "explained_by_advisor_note": true
+        }
+      },
+      "explanation": "account was quiet for 147 days, then 3 transactions within 7 days",
+      "confidence": 0.7
+    },
+    {
+      "finding_id": "F2",
+      "type": "anomaly",
+      "severity": "high",
+      "rules": [
+        "R1_robust_zscore",
+        "R5_new_counterparty"
+      ],
+      "evidence": {
+        "tx_ids": [
+          "t0133"
+        ],
+        "amount_idr": 42160510,
+        "baseline_idr": 3246349.0,
+        "value": 51.64,
+        "extra": {
+          "rule_values": {
+            "R1_robust_zscore": 51.64,
+            "R5_new_counterparty": 5.32
+          },
+          "counterparty": "cp_travel_001",
+          "explained_by_advisor_note": false
+        }
+      },
+      "explanation": "outflow of Rp 42,160,510 is 51.6 robust sigma above the client's median outflow (Rp 3,246,349); first ever transfer to cp_travel_001 of Rp 42,160,510 - 5.3x the client's usual upper bound (leave-one-out p95 Rp 7,921,646)",
+      "confidence": 0.85
+    },
+    {
+      "finding_id": "F3",
+      "type": "anomaly",
+      "severity": "high",
+      "rules": [
+        "R1_robust_zscore",
+        "R5_new_counterparty",
+        "R7_liquidity_drain"
+      ],
+      "evidence": {
+        "tx_ids": [
+          "t0138"
+        ],
+        "amount_idr": 5840716708,
+        "baseline_idr": 3246349.0,
+        "value": 7746.28,
+        "extra": {
+          "rule_values": {
+            "R1_robust_zscore": 7746.28,
+            "R5_new_counterparty": 737.31,
+            "R7_liquidity_drain": 0.659
+          },
+          "counterparty": "cp_big_001",
+          "explained_by_advisor_note": false
+        }
+      },
+      "explanation": "outflow of Rp 5,840,716,708 is 7746.3 robust sigma above the client's median outflow (Rp 3,246,349); first ever transfer to cp_big_001 of Rp 5,840,716,708 - 737.3x the client's usual upper bound (leave-one-out p95 Rp 7,921,646); single outflow of Rp 5,840,716,708 equals 66% of the client's Rp 8,862,806,178 AUM",
+      "confidence": 0.95
+    },
+    {
+      "finding_id": "F4",
+      "type": "anomaly",
+      "severity": "high",
+      "rules": [
+        "R1_robust_zscore",
+        "R5_new_counterparty"
+      ],
+      "evidence": {
+        "tx_ids": [
+          "t0139"
+        ],
+        "amount_idr": 24033725,
+        "baseline_idr": 3246349.0,
+        "value": 27.58,
+        "extra": {
+          "rule_values": {
+            "R1_robust_zscore": 27.58,
+            "R5_new_counterparty": 3.03
+          },
+          "counterparty": "cp_ins_annual",
+          "explained_by_advisor_note": false
+        }
+      },
+      "explanation": "outflow of Rp 24,033,725 is 27.6 robust sigma above the client's median outflow (Rp 3,246,349); first ever transfer to cp_ins_annual of Rp 24,033,725 - 3.0x the client's usual upper bound (leave-one-out p95 Rp 7,921,646)",
+      "confidence": 0.85
+    },
+    {
+      "finding_id": "F5",
+      "type": "anomaly",
+      "severity": "medium",
+      "rules": [
+        "R1_robust_zscore"
+      ],
+      "evidence": {
+        "tx_ids": [
+          "t0140"
+        ],
+        "amount_idr": 18611401,
+        "baseline_idr": 3246349.0,
+        "value": 20.39,
+        "extra": {
+          "rule_values": {
+            "R1_robust_zscore": 20.39
+          },
+          "counterparty": "cp_family_001",
+          "explained_by_advisor_note": true
+        }
+      },
+      "explanation": "outflow of Rp 18,611,401 is 20.4 robust sigma above the client's median outflow (Rp 3,246,349)",
+      "confidence": 0.7
+    }
+  ],
+  "recommendations": [
+    {
+      "action": "Verify the legitimacy of the Rp 5,840,716,708 transfer to cp_big_001",
+      "priority": 1,
+      "rationale": "This outflow is 66% of the client’s AUM, 737× the usual upper bound, and involves a new counterparty. No advisor note explains it, so it requires immediate compliance review and confirmation of client intent.",
+      "target_id": "t0138",
+      "requires_approval": true
+    },
+    {
+      "action": "Confirm the purpose and source of the Rp 42,160,510 transfer to cp_travel_001",
+      "priority": 2,
+      "rationale": "The transfer is 51.6 robust sigma above the median outflow and 5.3× the client’s usual upper bound. It is a new counterparty and not explained by advisor notes, warranting a detailed inquiry.",
+      "target_id": "t0133",
+      "requires_approval": false
+    },
+    {
+      "action": "Investigate the Rp 24,033,725 transfer to cp_ins_annual",
+      "priority": 3,
+      "rationale": "This outflow is 27.6 robust sigma above the median and 3× the usual upper bound. It is a new counterparty and lacks an explanatory note, so a compliance check is needed.",
+      "target_id": "t0139",
+      "requires_approval": false
+    },
+    {
+      "action": "Document the findings and client responses for audit trail",
+      "priority": 4,
+      "rationale": "All anomalies should be recorded with the client’s explanations (or lack thereof) to support future reviews and regulatory reporting.",
+      "target_id": null,
+      "requires_approval": false
+    }
+  ],
+  "summary_text": "Client 001 is a conservative investor with an AUM of Rp 8,862,806,178. The rule engine identified five anomalies. Three of them (F1, F5) are explained by recent advisor notes – a dormant account reactivation and a one‑off transfer to a family house down payment. The remaining three anomalies (F2, F3, F4) are high‑severity, involve first‑time transfers to new counterparties, and are not explained by the advisor notes. The largest outflow (Rp 5,840,716,708) to cp_big_001 (F3) represents 66% of the client’s AUM and is 737× the usual upper bound. The other two outflows (Rp 42,160,510 to cp_travel_001 and Rp 24,033,725 to cp_ins_annual) are also far above the client’s typical outflow levels.",
+  "human_review": {
+    "required": true,
+    "decision": "approved",
+    "reviewer": "auto-approve",
+    "note": "--auto-approve: checkpoint recorded but not prompted",
+    "decided_at": null
+  },
+  "degraded_reasons": [],
+  "metrics": {
+    "llm_calls": 1,
+    "llm_tokens_in": 1143,
+    "llm_tokens_out": 751,
+    "stage_latency_ms": {
+      "fetch": 112,
+      "analyze": 5,
+      "report": 15863
+    },
+    "memory_insights_used": 1
+  }
+}
