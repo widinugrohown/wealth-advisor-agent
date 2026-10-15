@@ -32,7 +32,9 @@ def load_truth(path: str) -> tuple[dict[str, set[str]], dict[str, int]]:
 
 
 def load_runs(runs_dir: str) -> list[dict]:
-    """One row per client: the LAST run for that client wins (memory runs excluded)."""
+    """One row per client: the LAST run for that client wins."""
+    if not os.path.isdir(runs_dir):
+        return []
     latest: dict[str, dict] = {}
     for name in sorted(os.listdir(runs_dir)):
         path = os.path.join(runs_dir, name, "advisory.json")
@@ -55,8 +57,8 @@ def main() -> int:
     tx_truth, profile_truth = load_truth(args.truth)
     runs = load_runs(args.runs_dir)
     if not runs:
-        print(f"no advisory.json found under {args.runs_dir}/ - run `python main.py --all "
-              f"--no-llm --auto-approve` first")
+        print(f"no advisory.json found under '{args.runs_dir}/' - run `make all` "
+              f"(python main.py --all --no-llm --auto-approve) first")
         return 1
 
     tp = fp = fn = 0

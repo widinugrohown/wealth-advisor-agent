@@ -11,6 +11,8 @@ import os
 
 def read_events(runs_dir: str) -> list[dict]:
     events: list[dict] = []
+    if not os.path.isdir(runs_dir):
+        return events
     for run in sorted(os.listdir(runs_dir)):
         path = os.path.join(runs_dir, run, "events.jsonl")
         if not os.path.exists(path):
@@ -35,10 +37,14 @@ def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("runs_dir", nargs="?", default="runs")
     args = p.parse_args()
+    if not os.path.isdir(args.runs_dir):
+        print(f"no runs directory '{args.runs_dir}' - run `make all` (or a single "
+              f"`python main.py --client c001 --auto-approve`) first")
+        return 1
     events = read_events(args.runs_dir)
     if not events:
-        print("no events yet")
-        return 0
+        print(f"no events in '{args.runs_dir}' yet - run the pipeline first")
+        return 1
     by_agent: dict[str, list[int]] = {}
     for e in events:
         if e.get("event") == "agent_end" and e.get("latency_ms") is not None:
