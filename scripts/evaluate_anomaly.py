@@ -31,20 +31,29 @@ def load_truth(path: str) -> tuple[dict[str, set[str]], dict[str, int]]:
     return tx_truth, profile_truth
 
 
-def load_runs(runs_dir: str) -> list[dict]:
-    """One row per client: the LAST run for that client wins."""
+def load_runs(runs_dir: str) -> tuple[list[dict], int]:
+    """One row per client: the LAST successful run for that client wins.
+
+    Runs with status 'failed' (a missing client, for example) are skipped and
+    counted: they carry no analysis, and scoring them would report a client the
+    ground truth never mentions.
+    """
     if not os.path.isdir(runs_dir):
-        return []
+        return [], 0
     latest: dict[str, dict] = {}
+    skipped = 0
     for name in sorted(os.listdir(runs_dir)):
         path = os.path.join(runs_dir, name, "advisory.json")
         if not os.path.exists(path):
             continue
         with open(path, encoding="utf-8") as fh:
             payload = json.load(fh)
-        if payload.get("client_id") and ("memory" not in name):
+        if payload.get("status") == "failed":
+            skipped += 1
+            continue
+        if payload.get("client_id"):
             latest[payload["client_id"]] = payload
-    return list(latest.values())
+    return list(latest.values()), skipped
 
 
 def main() -> int:
@@ -55,7 +64,7 @@ def main() -> int:
     args = p.parse_args()
 
     tx_truth, profile_truth = load_truth(args.truth)
-    runs = load_runs(args.runs_dir)
+    runs, skipped = load_runs(args.runs_dir)
     if not runs:
         print(f"no advisory.json found under '{args.runs_dir}/' - run `make all` "
               f"(python main.py --all --no-llm --auto-approve) first")
@@ -92,7 +101,9 @@ def main() -> int:
     f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
     alert_precision = alerts_hit / alerts_total if alerts_total else 0.0
 
-    print(f"scored clients: {len(rows)}")
+    print(f"scored clients: {len(rows)}"
+          + (f" (skipped {skipped} failed run(s) - a failed run has no analysis to score)"
+             if skipped else ""))
     print(f"{'client':8} {'labelled':>8} {'TP':>3} {'FP':>3} {'FN':>3}  status")
     for client_id, n_truth, c_tp, c_fp, c_fn, status in rows:
         flag = "  <-- FN" if c_fn else ("  <-- FP" if c_fp else "")

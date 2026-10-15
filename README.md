@@ -135,7 +135,7 @@ make crm                           # terminal 1: uvicorn mock_crm.server:app --p
 make demo                          # terminal 2: one client, interactive checkpoint
 make demo-no-llm                   # same, rule-based reporter
 make test                          # pytest -q
-make all && make eval              # run every client, then score against the ground truth
+make all && make eval              # run every client, then score them against the ground truth
 make latency                       # p50/p95 per stage from the event logs
 make matrix                        # 30 runs against a mock CRM that fails on purpose
 python scripts/make_examples.py    # regenerate the files in examples/
@@ -180,7 +180,7 @@ and `runs-chaos/summary.json` (both gitignored — re-run the commands to reprod
 
 | Metric | How | Result |
 |---|---|---|
-| Test suite | `pytest -q` (also `make test`) | **44 passed** |
+| Test suite | `pytest -q` (also `make test`) | **45 passed** |
 | Anomaly detection (per transaction) | `make all && make eval` | precision **0.629**, recall **0.947**, F1 **0.756** (TP 90, FP 53, FN 5) |
 | Anomaly detection (per alert) | same run | **0.669** — 136 alerts, 91 point at a labelled transaction |
 | Findings explained by an advisor note | same run | 26 downgraded, 0 deleted |

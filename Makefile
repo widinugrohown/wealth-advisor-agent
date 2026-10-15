@@ -1,4 +1,4 @@
-.PHONY: install data crm demo demo-no-llm demo-chaos test eval latency matrix clean
+.PHONY: install data crm demo demo-no-llm demo-chaos test all eval latency matrix clean
 
 install:
 	pip install -r requirements.txt
@@ -26,7 +26,9 @@ test:
 all:
 	bash scripts/run_demo.sh --all --no-llm --auto-approve
 
-eval: all
+# `make all` first: eval scores whatever is in runs/ (it no longer re-runs the
+# pipeline, which used to make `make all && make eval` process every client twice)
+eval:
 	python scripts/evaluate_anomaly.py --json-out runs/eval_summary.json
 
 latency:
