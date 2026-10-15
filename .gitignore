@@ -1,0 +1,13 @@
+# secrets
+.env
+*.env
+!.env.example
+
+# runtime artefacts
+runs*/
+memory/*.jsonl
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.DS_Store
