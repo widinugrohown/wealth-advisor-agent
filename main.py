@@ -56,8 +56,10 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     worst = 0
+    llm_hint = False
     for client_id in clients:
         output = orchestrator.run_client(client_id)
+        llm_hint = llm_hint or "llm_not_configured" in output.degraded_reasons
         run_dir = os.path.join(args.runs_dir, output.run_id)
         os.makedirs(run_dir, exist_ok=True)
         path = os.path.join(run_dir, "advisory.json")
@@ -68,6 +70,11 @@ def main(argv: list[str] | None = None) -> int:
             print(f"[{output.status:8}] {client_id}: {len(output.findings)} findings "
                   f"({high} high) | hitl={output.human_review.decision} | {path}")
         worst = max(worst, EXIT_CODES.get(output.status, 2))
+
+    if llm_hint and not args.quiet:
+        print("hint: no LLM_API_KEY found. The report was produced by the rule-based path; "
+              "pass --no-llm to mark the run as intentionally rule-based (status becomes ok "
+              "instead of degraded).")
     return worst
 
 

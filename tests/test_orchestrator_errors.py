@@ -123,3 +123,27 @@ def test_memory_and_output_files_are_written(tmp_path):
         lines = [json.loads(line) for line in fh if line.strip()]
     assert len(lines) == 2, "one memory line per run"
     assert lines[0]["client_id"] == "c001"
+
+
+def test_rule_based_run_is_ok_when_the_llm_is_switched_off_on_purpose(tmp_path):
+    output = orchestrator(tmp_path, registry_with(healthy(NORMAL_TX)), use_llm=False) \
+        .run_client("c001")
+    assert output.status == "ok", "asking for the rule-based path is not a degradation"
+    assert output.degraded_reasons == []
+    assert output.metrics["llm_calls"] == 0
+    modes = [e["detail"] for e in events_of(output, tmp_path)
+             if e["event"] == "decision" and e["detail"].get("decision") == "reporter_mode"]
+    assert modes and modes[0]["reason"] == "llm_disabled_by_flag"
+
+
+def test_missing_api_key_degrades_a_run_that_wanted_the_llm(tmp_path, monkeypatch):
+    monkeypatch.delenv("LLM_API_KEY", raising=False)
+    output = orchestrator(tmp_path, registry_with(healthy(NORMAL_TX)), use_llm=True) \
+        .run_client("c001")
+    assert output.status == "degraded"
+    assert "llm_not_configured" in output.degraded_reasons
+    assert output.summary_text, "the rule-based narrative still has to be there"
+    modes = [e for e in events_of(output, tmp_path)
+             if e["event"] == "decision" and e["detail"].get("decision") == "reporter_mode"]
+    assert modes and modes[0]["level"] == "warning"
+    assert modes[0]["detail"]["reason"] == "no_api_key"

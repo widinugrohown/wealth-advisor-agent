@@ -53,8 +53,17 @@ A real excerpt from `examples/output_client_001.json`:
 }
 ```
 
-No API key? Nothing to do. Without `LLM_API_KEY` the reporter uses its
-rule-based narrative and logs one `warn` line; the output shape is identical.
+No API key? Nothing to do. The two ways to run without an LLM are **not**
+identical, and the difference is deliberate:
+
+| Command | Reporter | `status` | Log line |
+|---|---|---|---|
+| `--no-llm` | rule-based | `ok` | `reporter_mode mode=rule_based reason=llm_disabled_by_flag` (info) |
+| no flag, no `LLM_API_KEY` | rule-based | `degraded` (`llm_not_configured`) | `reporter_mode mode=rule_based reason=no_api_key` (warn) |
+
+You asked for the LLM path and it was unavailable, so the run says so instead of
+quietly pretending. Findings, evidence, latency, log and checkpoint behaviour are
+identical in both cases — `report` takes 0 ms, because no tokens are involved.
 
 ---
 
@@ -171,7 +180,7 @@ and `runs-chaos/summary.json` (both gitignored — re-run the commands to reprod
 
 | Metric | How | Result |
 |---|---|---|
-| Test suite | `pytest -q` (also `make test`) | **42 passed** |
+| Test suite | `pytest -q` (also `make test`) | **44 passed** |
 | Anomaly detection (per transaction) | `make all && make eval` | precision **0.629**, recall **0.947**, F1 **0.756** (TP 90, FP 53, FN 5) |
 | Anomaly detection (per alert) | same run | **0.669** — 136 alerts, 91 point at a labelled transaction |
 | Findings explained by an advisor note | same run | 26 downgraded, 0 deleted |
