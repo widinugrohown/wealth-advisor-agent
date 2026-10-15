@@ -175,7 +175,7 @@ and `runs-chaos/summary.json` (both gitignored — re-run the commands to reprod
 | Anomaly detection (per transaction) | `make all && make eval` | precision **0.629**, recall **0.947**, F1 **0.756** (TP 90, FP 53, FN 5) |
 | Anomaly detection (per alert) | same run | **0.669** — 136 alerts, 91 point at a labelled transaction |
 | Findings explained by an advisor note | same run | 26 downgraded, 0 deleted |
-| Stage latency, rule-based | `make latency` (20 runs) | fetch p50 **25 ms** / p95 37 ms · analyze p50 **1 ms** / p95 2 ms · report p50 **0 ms** (a few ms of run-to-run jitter) |
+| Stage latency, rule-based | `make latency` (20–21 runs) | fetch p50 **25 ms**, p95 **37–81 ms** across repeats · analyze p50 **1 ms** / p95 2–3 ms · report p50 **0 ms**. The median is stable, the far tail is not: a 21-sample p95 is the second-largest value, so it moves with the CRM process startup |
 | Stage latency, LLM path | 2 runs with `LLM_API_KEY` set | report **15,863 ms** and **36,697 ms**; 1 call per run; 1143/751 and 1924/1359 tokens |
 | Failure resilience | `make matrix` (3 levels × 10 runs) | 30 runs, **0 crashes**; ok/degraded = 10/0 at chaos 0.0, 7/3 at 0.3, 1/9 at 0.8 |
 | Human checkpoint | 20 baseline runs | 20/20 runs had a `high` finding and therefore reached the checkpoint |
