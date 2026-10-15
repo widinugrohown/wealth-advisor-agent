@@ -1,0 +1,1345 @@
+{
+  "client_id": "c019",
+  "name": "Client 019",
+  "risk_profile": "aggressive",
+  "aum_idr": 6039336381,
+  "holdings": [
+    {
+      "asset": "equity_fund",
+      "pct": 0.301
+    },
+    {
+      "asset": "bond_fund",
+      "pct": 0.106
+    },
+    {
+      "asset": "deposit",
+      "pct": 0.335
+    },
+    {
+      "asset": "gold",
+      "pct": 0.257
+    }
+  ],
+  "advisor_notes": [
+    "2026-10-09: client called ahead about a one-off transfer of Rp 15,893,120 to cp_family_001 (family house down payment). Expected, do not treat as suspicious.",
+    "2026-08-02: annual portfolio review completed, no change to the risk profile.",
+    "2026-09-11: client asked about adding a bond fund in Q4."
+  ],
+  "transactions": [
+    {
+      "tx_id": "t0001",
+      "date": "2025-11-01",
+      "amount_idr": 27916091,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0004",
+      "date": "2025-11-02",
+      "amount_idr": -2026924,
+      "category": "groceries",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0005",
+      "date": "2025-11-05",
+      "amount_idr": -2874999,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0006",
+      "date": "2025-11-12",
+      "amount_idr": -2846288,
+      "category": "groceries",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0009",
+      "date": "2025-11-12",
+      "amount_idr": -4953572,
+      "category": "transport",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0008",
+      "date": "2025-11-13",
+      "amount_idr": -2099488,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0002",
+      "date": "2025-11-20",
+      "amount_idr": -2706758,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0011",
+      "date": "2025-11-21",
+      "amount_idr": -4116137,
+      "category": "utilities",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0010",
+      "date": "2025-11-22",
+      "amount_idr": -3546797,
+      "category": "dining",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0012",
+      "date": "2025-11-23",
+      "amount_idr": -2047512,
+      "category": "transport",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0003",
+      "date": "2025-11-25",
+      "amount_idr": -2295664,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0007",
+      "date": "2025-11-25",
+      "amount_idr": -2932050,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0013",
+      "date": "2025-12-01",
+      "amount_idr": 23663891,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0014",
+      "date": "2025-12-01",
+      "amount_idr": -2561980,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0015",
+      "date": "2025-12-02",
+      "amount_idr": -2480708,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0022",
+      "date": "2025-12-06",
+      "amount_idr": -4010620,
+      "category": "transport",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0023",
+      "date": "2025-12-07",
+      "amount_idr": -5666790,
+      "category": "utilities",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0017",
+      "date": "2025-12-09",
+      "amount_idr": -2018803,
+      "category": "groceries",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0021",
+      "date": "2025-12-11",
+      "amount_idr": -5664941,
+      "category": "utilities",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0016",
+      "date": "2025-12-19",
+      "amount_idr": -2537174,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0018",
+      "date": "2025-12-19",
+      "amount_idr": -2020726,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0019",
+      "date": "2025-12-19",
+      "amount_idr": -4772137,
+      "category": "transport",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0020",
+      "date": "2025-12-26",
+      "amount_idr": -5594706,
+      "category": "dining",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0024",
+      "date": "2026-01-01",
+      "amount_idr": 26989803,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0031",
+      "date": "2026-01-07",
+      "amount_idr": -4411558,
+      "category": "dining",
+      "counterparty": "cp004",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0025",
+      "date": "2026-01-10",
+      "amount_idr": -2275445,
+      "category": "groceries",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0026",
+      "date": "2026-01-10",
+      "amount_idr": -2598790,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0029",
+      "date": "2026-01-19",
+      "amount_idr": -2350610,
+      "category": "groceries",
+      "counterparty": "cp004",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0030",
+      "date": "2026-01-19",
+      "amount_idr": -5952941,
+      "category": "transport",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0028",
+      "date": "2026-01-23",
+      "amount_idr": -2882604,
+      "category": "groceries",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0027",
+      "date": "2026-01-26",
+      "amount_idr": -2234268,
+      "category": "groceries",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0032",
+      "date": "2026-02-01",
+      "amount_idr": 26466446,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0037",
+      "date": "2026-02-01",
+      "amount_idr": -2655752,
+      "category": "groceries",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0042",
+      "date": "2026-02-05",
+      "amount_idr": -4016951,
+      "category": "transport",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0034",
+      "date": "2026-02-07",
+      "amount_idr": -2431849,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0035",
+      "date": "2026-02-09",
+      "amount_idr": -2652732,
+      "category": "groceries",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0039",
+      "date": "2026-02-09",
+      "amount_idr": -5966830,
+      "category": "utilities",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0043",
+      "date": "2026-02-11",
+      "amount_idr": -2038514,
+      "category": "utilities",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0041",
+      "date": "2026-02-12",
+      "amount_idr": -5377676,
+      "category": "dining",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0033",
+      "date": "2026-02-14",
+      "amount_idr": -2693094,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0038",
+      "date": "2026-02-19",
+      "amount_idr": -2520862,
+      "category": "groceries",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0040",
+      "date": "2026-02-19",
+      "amount_idr": -2000380,
+      "category": "utilities",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0036",
+      "date": "2026-02-22",
+      "amount_idr": -2797937,
+      "category": "groceries",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0044",
+      "date": "2026-03-01",
+      "amount_idr": 24919567,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0048",
+      "date": "2026-03-05",
+      "amount_idr": -2198648,
+      "category": "groceries",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0049",
+      "date": "2026-03-08",
+      "amount_idr": -2833172,
+      "category": "groceries",
+      "counterparty": "cp004",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0046",
+      "date": "2026-03-09",
+      "amount_idr": -2717629,
+      "category": "groceries",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0052",
+      "date": "2026-03-09",
+      "amount_idr": -2642520,
+      "category": "dining",
+      "counterparty": "cp004",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0047",
+      "date": "2026-03-13",
+      "amount_idr": -2247477,
+      "category": "groceries",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0050",
+      "date": "2026-03-15",
+      "amount_idr": -2506370,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0051",
+      "date": "2026-03-21",
+      "amount_idr": -1808466,
+      "category": "dining",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0054",
+      "date": "2026-03-21",
+      "amount_idr": -1852327,
+      "category": "utilities",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0053",
+      "date": "2026-03-26",
+      "amount_idr": -3828177,
+      "category": "utilities",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0055",
+      "date": "2026-03-26",
+      "amount_idr": -1665063,
+      "category": "dining",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0045",
+      "date": "2026-03-27",
+      "amount_idr": -2298398,
+      "category": "groceries",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0056",
+      "date": "2026-04-01",
+      "amount_idr": 23266448,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0067",
+      "date": "2026-04-06",
+      "amount_idr": -3294130,
+      "category": "transport",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0061",
+      "date": "2026-04-08",
+      "amount_idr": -2114779,
+      "category": "groceries",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0064",
+      "date": "2026-04-08",
+      "amount_idr": -2626368,
+      "category": "groceries",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0057",
+      "date": "2026-04-10",
+      "amount_idr": -2906705,
+      "category": "groceries",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0065",
+      "date": "2026-04-11",
+      "amount_idr": -4769200,
+      "category": "utilities",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0060",
+      "date": "2026-04-13",
+      "amount_idr": -2986387,
+      "category": "groceries",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0058",
+      "date": "2026-04-14",
+      "amount_idr": -2937744,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0066",
+      "date": "2026-04-14",
+      "amount_idr": -3326843,
+      "category": "dining",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0068",
+      "date": "2026-04-14",
+      "amount_idr": -3631329,
+      "category": "utilities",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0063",
+      "date": "2026-04-16",
+      "amount_idr": -2924943,
+      "category": "groceries",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0062",
+      "date": "2026-04-17",
+      "amount_idr": -2693892,
+      "category": "groceries",
+      "counterparty": "cp004",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0059",
+      "date": "2026-04-22",
+      "amount_idr": -2686775,
+      "category": "groceries",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0069",
+      "date": "2026-05-01",
+      "amount_idr": 26226851,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0073",
+      "date": "2026-05-09",
+      "amount_idr": -2919562,
+      "category": "groceries",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0078",
+      "date": "2026-05-09",
+      "amount_idr": -4725072,
+      "category": "transport",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0071",
+      "date": "2026-05-11",
+      "amount_idr": -2569665,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0070",
+      "date": "2026-05-12",
+      "amount_idr": -2731012,
+      "category": "groceries",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0074",
+      "date": "2026-05-12",
+      "amount_idr": -2495716,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0080",
+      "date": "2026-05-15",
+      "amount_idr": -4756788,
+      "category": "dining",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0072",
+      "date": "2026-05-16",
+      "amount_idr": -2713313,
+      "category": "groceries",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0076",
+      "date": "2026-05-21",
+      "amount_idr": -2946611,
+      "category": "groceries",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0079",
+      "date": "2026-05-26",
+      "amount_idr": -2521918,
+      "category": "utilities",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0075",
+      "date": "2026-05-27",
+      "amount_idr": -2320551,
+      "category": "groceries",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0077",
+      "date": "2026-05-27",
+      "amount_idr": -2772779,
+      "category": "groceries",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0081",
+      "date": "2026-06-01",
+      "amount_idr": 22287143,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0082",
+      "date": "2026-06-03",
+      "amount_idr": -2979215,
+      "category": "groceries",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0087",
+      "date": "2026-06-03",
+      "amount_idr": -2860595,
+      "category": "groceries",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0083",
+      "date": "2026-06-10",
+      "amount_idr": -2218016,
+      "category": "groceries",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0084",
+      "date": "2026-06-15",
+      "amount_idr": -2659431,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0090",
+      "date": "2026-06-17",
+      "amount_idr": -2054785,
+      "category": "transport",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0091",
+      "date": "2026-06-20",
+      "amount_idr": -4239188,
+      "category": "transport",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0088",
+      "date": "2026-06-24",
+      "amount_idr": -4962227,
+      "category": "transport",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0092",
+      "date": "2026-06-25",
+      "amount_idr": -1935093,
+      "category": "utilities",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0085",
+      "date": "2026-06-26",
+      "amount_idr": -2801396,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0086",
+      "date": "2026-06-26",
+      "amount_idr": -2032937,
+      "category": "groceries",
+      "counterparty": "cp004",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0089",
+      "date": "2026-06-27",
+      "amount_idr": -2340236,
+      "category": "dining",
+      "counterparty": "cp004",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0093",
+      "date": "2026-07-01",
+      "amount_idr": 28572269,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0095",
+      "date": "2026-07-01",
+      "amount_idr": -2417534,
+      "category": "groceries",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0105",
+      "date": "2026-07-01",
+      "amount_idr": -1690744,
+      "category": "utilities",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0103",
+      "date": "2026-07-03",
+      "amount_idr": -4975105,
+      "category": "transport",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0098",
+      "date": "2026-07-06",
+      "amount_idr": -2259138,
+      "category": "groceries",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0104",
+      "date": "2026-07-13",
+      "amount_idr": -4663246,
+      "category": "utilities",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0101",
+      "date": "2026-07-16",
+      "amount_idr": -2618018,
+      "category": "transport",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0097",
+      "date": "2026-07-19",
+      "amount_idr": -2083636,
+      "category": "groceries",
+      "counterparty": "cp055",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0099",
+      "date": "2026-07-20",
+      "amount_idr": -2716474,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0096",
+      "date": "2026-07-21",
+      "amount_idr": -2317799,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0102",
+      "date": "2026-07-22",
+      "amount_idr": -4246000,
+      "category": "transport",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0094",
+      "date": "2026-07-26",
+      "amount_idr": -2669650,
+      "category": "groceries",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0100",
+      "date": "2026-07-26",
+      "amount_idr": -2982461,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0106",
+      "date": "2026-08-01",
+      "amount_idr": 19492779,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0108",
+      "date": "2026-08-02",
+      "amount_idr": -2417925,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0110",
+      "date": "2026-08-03",
+      "amount_idr": -2383202,
+      "category": "groceries",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0114",
+      "date": "2026-08-04",
+      "amount_idr": -3381164,
+      "category": "utilities",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0107",
+      "date": "2026-08-07",
+      "amount_idr": -2271909,
+      "category": "groceries",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0115",
+      "date": "2026-08-07",
+      "amount_idr": -3731128,
+      "category": "transport",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0116",
+      "date": "2026-08-13",
+      "amount_idr": -2590248,
+      "category": "transport",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0118",
+      "date": "2026-08-14",
+      "amount_idr": -3011109,
+      "category": "transport",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0111",
+      "date": "2026-08-19",
+      "amount_idr": -2120460,
+      "category": "groceries",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0109",
+      "date": "2026-08-20",
+      "amount_idr": -2270205,
+      "category": "groceries",
+      "counterparty": "cp011",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0117",
+      "date": "2026-08-20",
+      "amount_idr": -3306360,
+      "category": "transport",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0112",
+      "date": "2026-08-23",
+      "amount_idr": -2548790,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0113",
+      "date": "2026-08-25",
+      "amount_idr": -2962088,
+      "category": "groceries",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0119",
+      "date": "2026-09-01",
+      "amount_idr": 18482732,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0127",
+      "date": "2026-09-02",
+      "amount_idr": -4290310,
+      "category": "dining",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0122",
+      "date": "2026-09-03",
+      "amount_idr": -2008231,
+      "category": "groceries",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0126",
+      "date": "2026-09-03",
+      "amount_idr": -2297318,
+      "category": "utilities",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0123",
+      "date": "2026-09-05",
+      "amount_idr": -2911184,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0121",
+      "date": "2026-09-08",
+      "amount_idr": -2385003,
+      "category": "groceries",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0120",
+      "date": "2026-09-09",
+      "amount_idr": -2244334,
+      "category": "groceries",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0128",
+      "date": "2026-09-12",
+      "amount_idr": -1879838,
+      "category": "dining",
+      "counterparty": "cp004",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0129",
+      "date": "2026-09-17",
+      "amount_idr": -4693593,
+      "category": "transport",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0124",
+      "date": "2026-09-23",
+      "amount_idr": -2414276,
+      "category": "groceries",
+      "counterparty": "cp033",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0125",
+      "date": "2026-09-23",
+      "amount_idr": -2399534,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0130",
+      "date": "2026-10-01",
+      "amount_idr": 29261907,
+      "category": "salary",
+      "counterparty": "employer",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0131",
+      "date": "2026-10-05",
+      "amount_idr": -2932976,
+      "category": "groceries",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0135",
+      "date": "2026-10-05",
+      "amount_idr": -2091412,
+      "category": "groceries",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0138",
+      "date": "2026-10-05",
+      "amount_idr": -5685739,
+      "category": "transport",
+      "counterparty": "cp026",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0133",
+      "date": "2026-10-06",
+      "amount_idr": -2525626,
+      "category": "groceries",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0144",
+      "date": "2026-10-08",
+      "amount_idr": -33731667,
+      "category": "travel",
+      "counterparty": "cp_travel_001",
+      "channel": "mobile",
+      "note": "injected"
+    },
+    {
+      "tx_id": "t0137",
+      "date": "2026-10-09",
+      "amount_idr": -2478199,
+      "category": "transport",
+      "counterparty": "cp036",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0146",
+      "date": "2026-10-09",
+      "amount_idr": -15893120,
+      "category": "transfer_out",
+      "counterparty": "cp_family_001",
+      "channel": "mobile",
+      "note": "hard negative: explained to the advisor in advance"
+    },
+    {
+      "tx_id": "t0134",
+      "date": "2026-10-11",
+      "amount_idr": -2917951,
+      "category": "groceries",
+      "counterparty": "cp032",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0139",
+      "date": "2026-10-14",
+      "amount_idr": -3871408,
+      "category": "transport",
+      "counterparty": "cp004",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0143",
+      "date": "2026-10-16",
+      "amount_idr": -3598148020,
+      "category": "transfer_out",
+      "counterparty": "cp_big_001",
+      "channel": "mobile",
+      "note": "injected"
+    },
+    {
+      "tx_id": "t0145",
+      "date": "2026-10-17",
+      "amount_idr": -22837188,
+      "category": "insurance",
+      "counterparty": "cp_ins_annual",
+      "channel": "mobile",
+      "note": "hard negative: annual premium"
+    },
+    {
+      "tx_id": "t0132",
+      "date": "2026-10-19",
+      "amount_idr": -2185495,
+      "category": "groceries",
+      "counterparty": "cp004",
+      "channel": "mobile",
+      "note": ""
+    },
+    {
+      "tx_id": "t0142",
+      "date": "2026-10-20",
+      "amount_idr": -9157217,
+      "category": "transfer_out",
+      "counterparty": "cp_struct_001",
+      "channel": "mobile",
+      "note": "injected"
+    },
+    {
+      "tx_id": "t0141",
+      "date": "2026-10-21",
+      "amount_idr": -9255840,
+      "category": "transfer_out",
+      "counterparty": "cp_struct_001",
+      "channel": "mobile",
+      "note": "injected"
+    },
+    {
+      "tx_id": "t0140",
+      "date": "2026-10-22",
+      "amount_idr": -9298096,
+      "category": "transfer_out",
+      "counterparty": "cp_struct_001",
+      "channel": "mobile",
+      "note": "injected"
+    },
+    {
+      "tx_id": "t0136",
+      "date": "2026-10-23",
+      "amount_idr": -2553599,
+      "category": "groceries",
+      "counterparty": "cp017",
+      "channel": "mobile",
+      "note": ""
+    }
+  ]
+}

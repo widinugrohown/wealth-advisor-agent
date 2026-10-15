@@ -1,0 +1,104 @@
+{"client_id": "c001", "tx_id": "t0133", "anomaly_type": "category_outlier"}
+{"client_id": "c001", "tx_id": "t0135", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c001", "tx_id": "t0136", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c001", "tx_id": "t0137", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c001", "tx_id": "t0138", "anomaly_type": "liquidity_drain"}
+{"client_id": "c002", "tx_id": "t0140", "anomaly_type": "liquidity_drain"}
+{"client_id": "c002", "tx_id": null, "anomaly_type": "concentration", "note": "portfolio concentration, no transaction"}
+{"client_id": "c002", "tx_id": "t0141", "anomaly_type": "category_outlier"}
+{"client_id": "c003", "tx_id": "t0124", "anomaly_type": "oversized_new_counterparty"}
+{"client_id": "c003", "tx_id": "t0126", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c003", "tx_id": "t0127", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c003", "tx_id": "t0128", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c003", "tx_id": "t0129", "anomaly_type": "structuring_burst"}
+{"client_id": "c003", "tx_id": "t0130", "anomaly_type": "structuring_burst"}
+{"client_id": "c003", "tx_id": "t0131", "anomaly_type": "structuring_burst"}
+{"client_id": "c004", "tx_id": null, "anomaly_type": "concentration", "note": "portfolio concentration, no transaction"}
+{"client_id": "c004", "tx_id": "t0133", "anomaly_type": "oversized_new_counterparty"}
+{"client_id": "c004", "tx_id": "t0135", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c004", "tx_id": "t0136", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c004", "tx_id": "t0137", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c005", "tx_id": "t0121", "anomaly_type": "category_outlier"}
+{"client_id": "c005", "tx_id": "t0122", "anomaly_type": "liquidity_drain"}
+{"client_id": "c005", "tx_id": null, "anomaly_type": "concentration", "note": "portfolio concentration, no transaction"}
+{"client_id": "c006", "tx_id": "t0128", "anomaly_type": "liquidity_drain"}
+{"client_id": "c006", "tx_id": "t0129", "anomaly_type": "category_outlier"}
+{"client_id": "c006", "tx_id": "t0131", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c006", "tx_id": "t0132", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c006", "tx_id": "t0133", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c007", "tx_id": "t0123", "anomaly_type": "oversized_new_counterparty"}
+{"client_id": "c007", "tx_id": "t0124", "anomaly_type": "structuring_burst"}
+{"client_id": "c007", "tx_id": "t0125", "anomaly_type": "structuring_burst"}
+{"client_id": "c007", "tx_id": "t0126", "anomaly_type": "structuring_burst"}
+{"client_id": "c007", "tx_id": "t0128", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c007", "tx_id": "t0129", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c007", "tx_id": "t0130", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c008", "tx_id": null, "anomaly_type": "concentration", "note": "portfolio concentration, no transaction"}
+{"client_id": "c008", "tx_id": "t0127", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c008", "tx_id": "t0128", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c008", "tx_id": "t0129", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c008", "tx_id": "t0130", "anomaly_type": "oversized_new_counterparty"}
+{"client_id": "c009", "tx_id": "t0117", "anomaly_type": "category_outlier"}
+{"client_id": "c009", "tx_id": "t0118", "anomaly_type": "oversized_new_counterparty"}
+{"client_id": "c009", "tx_id": "t0119", "anomaly_type": "structuring_burst"}
+{"client_id": "c009", "tx_id": "t0120", "anomaly_type": "structuring_burst"}
+{"client_id": "c009", "tx_id": "t0121", "anomaly_type": "structuring_burst"}
+{"client_id": "c010", "tx_id": "t0123", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c010", "tx_id": "t0124", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c010", "tx_id": "t0125", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c010", "tx_id": null, "anomaly_type": "concentration", "note": "portfolio concentration, no transaction"}
+{"client_id": "c010", "tx_id": "t0126", "anomaly_type": "oversized_new_counterparty"}
+{"client_id": "c011", "tx_id": "t0120", "anomaly_type": "structuring_burst"}
+{"client_id": "c011", "tx_id": "t0121", "anomaly_type": "structuring_burst"}
+{"client_id": "c011", "tx_id": "t0122", "anomaly_type": "structuring_burst"}
+{"client_id": "c011", "tx_id": null, "anomaly_type": "concentration", "note": "portfolio concentration, no transaction"}
+{"client_id": "c011", "tx_id": "t0124", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c011", "tx_id": "t0125", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c011", "tx_id": "t0126", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c012", "tx_id": "t0135", "anomaly_type": "structuring_burst"}
+{"client_id": "c012", "tx_id": "t0136", "anomaly_type": "structuring_burst"}
+{"client_id": "c012", "tx_id": "t0137", "anomaly_type": "structuring_burst"}
+{"client_id": "c012", "tx_id": "t0138", "anomaly_type": "liquidity_drain"}
+{"client_id": "c012", "tx_id": "t0140", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c012", "tx_id": "t0141", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c012", "tx_id": "t0142", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c013", "tx_id": null, "anomaly_type": "concentration", "note": "portfolio concentration, no transaction"}
+{"client_id": "c013", "tx_id": "t0128", "anomaly_type": "structuring_burst"}
+{"client_id": "c013", "tx_id": "t0129", "anomaly_type": "structuring_burst"}
+{"client_id": "c013", "tx_id": "t0130", "anomaly_type": "structuring_burst"}
+{"client_id": "c013", "tx_id": "t0131", "anomaly_type": "oversized_new_counterparty"}
+{"client_id": "c014", "tx_id": "t0125", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c014", "tx_id": "t0126", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c014", "tx_id": "t0127", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c014", "tx_id": "t0128", "anomaly_type": "category_outlier"}
+{"client_id": "c014", "tx_id": "t0129", "anomaly_type": "oversized_new_counterparty"}
+{"client_id": "c015", "tx_id": "t0141", "anomaly_type": "structuring_burst"}
+{"client_id": "c015", "tx_id": "t0142", "anomaly_type": "structuring_burst"}
+{"client_id": "c015", "tx_id": "t0143", "anomaly_type": "structuring_burst"}
+{"client_id": "c015", "tx_id": null, "anomaly_type": "concentration", "note": "portfolio concentration, no transaction"}
+{"client_id": "c015", "tx_id": "t0144", "anomaly_type": "category_outlier"}
+{"client_id": "c016", "tx_id": "t0125", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c016", "tx_id": "t0126", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c016", "tx_id": "t0127", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c016", "tx_id": "t0128", "anomaly_type": "oversized_new_counterparty"}
+{"client_id": "c016", "tx_id": "t0129", "anomaly_type": "structuring_burst"}
+{"client_id": "c016", "tx_id": "t0130", "anomaly_type": "structuring_burst"}
+{"client_id": "c016", "tx_id": "t0131", "anomaly_type": "structuring_burst"}
+{"client_id": "c017", "tx_id": "t0123", "anomaly_type": "category_outlier"}
+{"client_id": "c017", "tx_id": "t0124", "anomaly_type": "oversized_new_counterparty"}
+{"client_id": "c017", "tx_id": null, "anomaly_type": "concentration", "note": "portfolio concentration, no transaction"}
+{"client_id": "c018", "tx_id": "t0119", "anomaly_type": "structuring_burst"}
+{"client_id": "c018", "tx_id": "t0120", "anomaly_type": "structuring_burst"}
+{"client_id": "c018", "tx_id": "t0121", "anomaly_type": "structuring_burst"}
+{"client_id": "c018", "tx_id": "t0122", "anomaly_type": "category_outlier"}
+{"client_id": "c018", "tx_id": "t0123", "anomaly_type": "liquidity_drain"}
+{"client_id": "c019", "tx_id": "t0140", "anomaly_type": "structuring_burst"}
+{"client_id": "c019", "tx_id": "t0141", "anomaly_type": "structuring_burst"}
+{"client_id": "c019", "tx_id": "t0142", "anomaly_type": "structuring_burst"}
+{"client_id": "c019", "tx_id": "t0143", "anomaly_type": "liquidity_drain"}
+{"client_id": "c019", "tx_id": "t0144", "anomaly_type": "category_outlier"}
+{"client_id": "c020", "tx_id": "t0133", "anomaly_type": "liquidity_drain"}
+{"client_id": "c020", "tx_id": "t0134", "anomaly_type": "category_outlier"}
+{"client_id": "c020", "tx_id": "t0136", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c020", "tx_id": "t0137", "anomaly_type": "dormant_reactivation"}
+{"client_id": "c020", "tx_id": "t0138", "anomaly_type": "dormant_reactivation"}
